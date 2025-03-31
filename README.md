@@ -10,9 +10,9 @@ Tâche :
 
 Nous disposons de deux ensembles de données :
 
-    Un extrait contenant les données d'IAP.
+    Un extrait contenant les données d'IAP. : technical_test_external_source_extract.csv
 
-    Une source externe qui associe les URL de logos aux noms d'applications et des éditeurs.
+    Une source externe qui associe les URL de logos aux noms d'applications et des éditeurs. : technical_test_table_extract.csv
 
 Notre mission est de :
 
@@ -47,6 +47,33 @@ Enrichissement des données :
 Une fois la correspondance trouvée, les informations supplémentaires comme le titre de l'application et le nom de l'éditeur sont ajoutées à chaque ligne des données IAP.
 
 Export des résultats :
-Après avoir enrichi les données, le code génère un fichier CSV final contenant les informations sur les applications, les éditeurs, et les URL des images correspondantes.
+Après avoir enrichi les données, le code génère un fichier CSV final contenant les informations sur les applications, les éditeurs, et les URL des images correspondantes. Une fonction Xlookup permet de joindre facilement les deux tableaux.
+
+Fichier Excel final : technical_test_external_source_extract
+
+
+# Problematique 2
+
+Nos deux tableaux sont maintenants enrichis, une analyse directe est maintenant possible.
+
+Problématique : Pour une analyse plus poussé, rajouter des colonnes pertinentes supplémentaires pourrait servir pour classer les analyses par catégories.
+
+Solution :
+
+A l'aide de PowerQuery, il est possible avec un peu d'imagination d'ajouter des colonnes supplémentaires grace à des filtres
+
+•	Une colonne categorie (Gaming, Dating, Streaming)
+
+![image](https://github.com/user-attachments/assets/db367c2f-77d1-4786-af68-3984bb8856cb)
+
+•	Une colonne Type (abonnement or achat unique)
+
+![image](https://github.com/user-attachments/assets/eff4fa7d-5fde-4438-b7dd-1a04fb6e5256)
+
+
+Une analyse complete est maintenant disponible avec des recommendations pour chaque type de produit (Gaming, Dating, Streaming) sur Analyse Python - PowerBI.
+
+
+
 
 
