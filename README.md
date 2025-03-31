@@ -2,7 +2,7 @@
 Python : Jointure de tables de données avec hash d'images et analyse du Covid sur les applications de google play store
 
 
-# En juillet 2020, nous avons commencé à travailler sur le secteur des applications mobiles. Il est rapidement devenu évident que deux informations clés étaient nécessaires pour réaliser des analyses pertinentes : le titre de l'application et le nom de l'éditeur. En collectant les données des reçus de l'App Store (iOS) et du Play Store (Android), nous avons pu obtenir des informations précieuses sur les achats in-app (IAP), c'est-à-dire les transactions effectuées à l'intérieur des applications.
+En juillet 2020, nous avons commencé à travailler sur le secteur des applications mobiles. Il est rapidement devenu évident que deux informations clés étaient nécessaires pour réaliser des analyses pertinentes : le titre de l'application et le nom de l'éditeur. En collectant les données des reçus de l'App Store (iOS) et du Play Store (Android), nous avons pu obtenir des informations précieuses sur les achats in-app (IAP), c'est-à-dire les transactions effectuées à l'intérieur des applications.
 
 Cependant, les reçus de l'App Store fournissent peu d'informations : seul le nom de l'IAP, l'URL du logo de l'application et le prix sont disponibles. En utilisant des données externes, nous avons constitué une base de données des URL de logos associées aux noms des applications et des éditeurs.
 
